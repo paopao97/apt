@@ -1,0 +1,17 @@
+view.search-input {
+  height: 100rpx;
+  background-color: #f63857;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+view.search-input navigator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5rpx;
+  width: 90%;
+  height: 80rpx;
+  color: #dad4d1;
+}

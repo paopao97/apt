@@ -1,0 +1,4 @@
+<!-- 搜索框 -->
+<view class="search-input">
+  <navigator open-type="navigate" url="pages/index/index">{{title}}</navigator>
+</view>

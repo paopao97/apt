@@ -1,0 +1,46 @@
+<view class="apt">
+  <!-- 搜索框 -->
+  <view class="input">
+    <search-input title="搜索" />
+  </view>
+  <!-- 轮播图 开始-->
+  <view class="swiper"> 
+    <swiper indicator-dots="true" 
+    indicator-color="black" 
+    indicator-active-color="white" 
+    interval="1000" 
+    circular="true" 
+    autoplay="true" >
+      <swiper-item wx:for="{{swiper_list}}" wx:key="image_src">
+        <image src="{{item.image_src}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图 结束-->
+  <!-- 导航栏 开始 -->
+  <view class="nav">
+    <view wx:for="{{catItems}}" wx:key="image_src"> 
+      <image src="{{item.image_src}}"></image>
+    </view>
+  </view>
+  <!-- 导航栏 结束 -->
+<!-- 图片列表 开始 -->
+  <view class="floorData">
+  <!-- *this 代表的必须是 唯一的字符串和数组。 -->
+    <block wx:for="{{floorData}}" wx:key="*this">
+  <!-- 图片列表 标题 开始 -->
+      <view class="floorData_title">
+        {{item.floor_title.name}}
+      </view>
+  <!-- 图片列表 标题 结束 -->
+      <view class="floorData_product">
+        <navigator wx:for="{{item.product_list}}" wx:key="image_src">
+          <image src="{{item.image_src}}"></image>
+        </navigator>
+      </view>
+    </block>
+  </view>
+
+<!-- 图片列表 结束 -->
+
+</view>

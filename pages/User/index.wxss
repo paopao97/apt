@@ -1,0 +1,88 @@
+.user {
+  background-color: #f9f9f9;
+}
+.user .user_profile {
+  height: 400rpx;
+  position: relative;
+  background-color: white;
+}
+.user .user_profile .user_info_bg image {
+  height: 400rpx;
+  width: 100%;
+  filter: blur(28rpx);
+}
+.user .user_profile .user_wrapper {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user .user_profile .user_wrapper image {
+  border-radius: 50%;
+  height: 172rpx;
+  width: 172rpx;
+}
+.user .user_profile .user_nickName {
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user .user_profile button {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid red;
+  color: red;
+  background-color: white;
+}
+.user .user-orderFunc {
+  display: flex;
+  height: 150rpx;
+  align-items: center;
+  margin: 10rpx 0;
+  background-color: white;
+}
+.user .user-orderFunc .orderFunc-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user .user-orderFunc .orderFunc-item .iconfont {
+  font-size: 50rpx;
+}
+.user .user-orderFunc .orderFunc-item .text {
+  font-size: 30rpx;
+}
+.user .user-systemFunc {
+  background-color: white;
+  height: 100%;
+}
+.user .user-systemFunc .systemFunc-item {
+  padding: 20rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #ccc;
+}
+.user .user-systemFunc .systemFunc-item .left {
+  display: flex;
+  align-items: center;
+}
+.user .user-systemFunc .systemFunc-item .left .iconfont {
+  color: #434343;
+  font-size: 50rpx;
+}
+.user .user-systemFunc .systemFunc-item .left .text {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #434343;
+}
+.user .user-systemFunc .systemFunc-item .right {
+  color: #434343;
+  font-size: 30rpx;
+}
